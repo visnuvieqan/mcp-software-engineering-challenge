@@ -1,0 +1,6 @@
+--- a/src/shipping.py
++++ b/src/shipping.py
+@@
+-    if subtotal >= 100:
++    if subtotal > 100:
+         return 0.0

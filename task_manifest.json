@@ -1,0 +1,24 @@
+{
+  "task_id": "shipping-boundary-fix-001",
+  "language": "python",
+  "task_type": "bug_fix",
+  "entrypoint": "src/shipping.py",
+  "issue_file": "issue.md",
+  "verification_command": "python verifier.py",
+  "fail_to_pass_tests": [
+    "test_exactly_100_still_pays_shipping"
+  ],
+  "pass_to_pass_tests": [
+    "test_standard_shipping_below_threshold",
+    "test_zero_subtotal_pays_shipping",
+    "test_negative_subtotal_is_invalid",
+    "test_just_over_100_gets_free_shipping",
+    "test_120_gets_free_shipping"
+  ],
+  "determinism_notes": [
+    "No network access required",
+    "No current-time dependency in verification",
+    "No random data generation",
+    "All dependencies are local or pinned by requirements"
+  ]
+}

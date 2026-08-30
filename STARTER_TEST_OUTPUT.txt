@@ -1,0 +1,22 @@
+[32m.[0m[32m.[0m[32m.[0m[31mF[0m[32m.[0m[32m.[0m[31m                                                                   [100%][0m
+=================================== FAILURES ===================================
+[31m[1m_____________________ test_exactly_100_still_pays_shipping _____________________[0m
+
+    [0m[94mdef[39;49;00m[90m [39;49;00m[92mtest_exactly_100_still_pays_shipping[39;49;00m():[90m[39;49;00m
+>       [94massert[39;49;00m calculate_shipping([94m100[39;49;00m) == [94m10.0[39;49;00m[90m[39;49;00m
+[1m[31mE       assert 0.0 == 10.0[0m
+[1m[31mE        +  where 0.0 = calculate_shipping(100)[0m
+
+[1m[31mtests/test_shipping.py[0m:22: AssertionError
+[36m[1m=========================== short test summary info ============================[0m
+[31mFAILED[0m tests/test_shipping.py::[1mtest_exactly_100_still_pays_shipping[0m - assert 0.0 == 10.0
+ +  where 0.0 = calculate_shipping(100)
+[31m[31m[1m1 failed[0m, [32m5 passed[0m[31m in 0.24s[0m[0m
+
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 772, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/connection.py", line 37, in get_or_create_client
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/daemon.py", line 124, in start_daemon
+TimeoutError: Timed out waiting for artifact tool daemon socket. Set ARTIFACT_TOOL_RPC_DAEMON_STARTUP_TIMEOUT_S=<seconds> to increase the limit.
