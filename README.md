@@ -1,5 +1,8 @@
 # MCP Software Engineering Challenge Environment
 
+**Full portfolio:** https://vieqan.com/portfolio  
+**Founder profile:** https://vieqan.com/visnu
+
 A small, reproducible portfolio project that demonstrates four skills:
 
 1. **MCP understanding & practical experience**
